@@ -1,15 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+input {
+  height: 2rem; 
+  font-size: 18px; 
+  border-radius: 8px; 
+}
+
+label {
+  font-size: 1rem;
+}
+
 .main {
   height: 100vh; 
-  background-color: #FFDDAE; 
+  /* background: linear-gradient(to right bottom, #ffddae, #fbfbfb);  */
+  background: linear-gradient(to right bottom, #6A1E55, #1A1A1D); 
+  color: white;
+  /* font-family: Montserrat, Arial, Helvetica, sans-serif;  */
+  /* font-family: "Host Grotesk", Arial, Helvetica, sans-serif; */
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  /* font-family: "Jost", Arial, Helvetica, sans-serif; */
 }
 
 .navbar {
-  font-family: Merienda; 
   font-weight: 900; 
   padding: 16px; 
   display: flex; 
   justify-content: center; 
+  font-family: "Outfit", Arial, Helvetica, sans-serif; 
 }
 
 .companyInfo {
@@ -24,16 +41,84 @@
   justify-content: center; 
   align-items: center; 
   gap: 2rem; 
-  font-size: 1rem;
+  font-size: 12px;
 }
 
 .logo {
-  height: 120px; 
-  width: 120px; 
+  height: 80px; 
+  width: 80px; 
   border-radius: 100%; 
   margin: 12px;
 }
 
 .link:hover {
   font-weight: 900; 
+}
+
+.heroSection {
+  display: flex; 
+  align-items: center; 
+  margin: 4rem; 
+  gap: 8rem; 
+  justify-content: center; 
+}
+
+.heroSectionText {
+  width: 600px;
+  font-size: 1.45rem;
+}
+
+.heroSectionTextHeading, .heroSectionTextSubheading {
+  margin: 12px 0 12px 0; 
+}
+
+.heroSectionImage {
+  width: 35rem; 
+}
+
+.buttonContainer {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin: 3rem;
+  height: 200px;
+}
+
+.heroButton, .button {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem 3rem; 
+  background-color: rgb(0,0,0); 
+  color: white; 
+  border-radius: 12px;
+}
+
+.heroButton:hover, .button:hover {
+  transform: scale(1.1); 
+}
+
+.loginForm {
+  margin: auto; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  padding: 48px; 
+  width: 400px; 
+  height: 400px; 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px; 
+}
+
+.formSection {
+  display: flex; 
+  flex-direction: column; 
+  gap: 4px; 
+  margin: 12px 0 12px 0; 
+  width: 100%; 
+}
+
+.link {
+  text-decoration: none; 
+  color: white; 
 }

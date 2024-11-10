@@ -1,11 +1,20 @@
 import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
+import { Link } from 'react-router-dom'; 
 import './App.css'
 
 function App() {
   return (
     <div className="main">  
       <Navbar />
-      <h1>This is the start of CalendAI</h1>
+      <HeroSection /> 
+      <div className="buttonContainer">
+          <h3 className="heroButton">
+            <Link className="link" to="/login">
+              get started
+            </Link>
+          </h3>
+      </div>
     </div>
   )
 }

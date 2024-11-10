@@ -1,15 +1,18 @@
-import logo from '../assets/logo.webp'; 
+import logo from '../assets/logo.png'; 
+import { Link } from 'react-router-dom'; 
 
 const Navbar = () => {
     return ( 
         <div className="navbar">
             <div className="companyInfo">
                 <img className="logo" src={logo}></img>
-                <h1>CalendAI</h1>
+                <Link className="link" to="/">
+                    <h1>calendai</h1>
+                </Link>
             </div>
-            <div className="cta-section">
-                <h2 className="link">Log In</h2>
-            </div>
+            {/* <div className="cta-section">
+                <h2 className="button">Log In</h2>
+            </div> */}
         </div>
      );
 }
